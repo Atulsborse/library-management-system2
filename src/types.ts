@@ -5,7 +5,7 @@ export interface Book {
   publicationYear: number;
   isAvailable: boolean;
 }
-
+// all types of test cases logic exported
 export class BookNotFoundError extends Error {
   constructor(isbn: string) {
     super(`Book with ISBN ${isbn} not found`);

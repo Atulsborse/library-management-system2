@@ -13,7 +13,7 @@ export class Library {
       isAvailable: true
     });
   }
-
+  //borrow book test ceses paased
   borrowBook(isbn: string): void {
     const book = this.books.get(isbn);
     
@@ -28,7 +28,7 @@ export class Library {
     book.isAvailable = false;
     this.books.set(isbn, book);
   }
-
+///return book test ceses paased
   returnBook(isbn: string): void {
     const book = this.books.get(isbn);
     
@@ -39,13 +39,13 @@ export class Library {
     book.isAvailable = true;
     this.books.set(isbn, book);
   }
-
+  //getAvailbleBooks book test ceses paased
   getAvailableBooks(): Book[] {
     return Array.from(this.books.values())
       .filter(book => book.isAvailable)
       .sort((a, b) => a.title.localeCompare(b.title));
   }
-
+  //getallbooks book test ceses paased
   getAllBooks(): Book[] {
     return Array.from(this.books.values())
       .sort((a, b) => a.title.localeCompare(b.title));
