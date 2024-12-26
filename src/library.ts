@@ -2,7 +2,7 @@ import { Book, BookNotFoundError, BookNotAvailableError, DuplicateBookError } fr
 
 export class Library {
   private books: Map<string, Book> = new Map();
-  //ADD book test ceses paased
+  //"Implement add book feature"
   addBook(book: Omit<Book, 'isAvailable'>): void {
     if (this.books.has(book.isbn)) {
       throw new DuplicateBookError(book.isbn);
