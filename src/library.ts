@@ -1,5 +1,5 @@
 import { Book, BookNotFoundError, BookNotAvailableError, DuplicateBookError } from './types';
-
+//Implement Book method in LibraryCatalog
 export class Library {
   private books: Map<string, Book> = new Map();
   //"Implement add book feature"
