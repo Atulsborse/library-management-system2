@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import { Library } from './library';
 import { BookNotFoundError, BookNotAvailableError, DuplicateBookError } from './types';
-
+//Add initial tests for adding books to the library catalog
 describe('Library', () => {
   let library: Library;
 
