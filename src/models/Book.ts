@@ -5,3 +5,5 @@ export interface Book {
   publicationYear: number;
   isAvailable: boolean;
 }
+
+// Book interface definition
