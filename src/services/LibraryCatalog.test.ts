@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import { LibraryCatalog } from './LibraryCatalog';
 import { BookNotFoundError, BookNotAvailableError, DuplicateBookError } from '../utils/errors';
-
+// Test suite for library catalog
 describe('LibraryCatalog', () => {
   let catalog: LibraryCatalog;
 
