@@ -1,3 +1,5 @@
+
+// Interface representing a book
 export interface Book {
   isbn: string;
   title: string;
@@ -5,7 +7,8 @@ export interface Book {
   publicationYear: number;
   isAvailable: boolean;
 }
-// all types of test cases logic exported
+// Custom error class for book not found
+
 export class BookNotFoundError extends Error {
   constructor(isbn: string) {
     super(`Book with ISBN ${isbn} not found`);
@@ -13,13 +16,14 @@ export class BookNotFoundError extends Error {
   }
 }
 
+// Custom error class for book not available
 export class BookNotAvailableError extends Error {
   constructor(isbn: string) {
     super(`Book with ISBN ${isbn} is not available`);
     this.name = 'BookNotAvailableError';
   }
 }
-
+// Custom error class for duplicate book
 export class DuplicateBookError extends Error {
   constructor(isbn: string) {
     super(`Book with ISBN ${isbn} already exists`);
