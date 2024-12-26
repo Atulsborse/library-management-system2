@@ -10,11 +10,11 @@ function displayLibraryStatus(statusMessage: string) {
   console.log('Available Books:', availableBooks);
 }
 
-// Demonstrate library operations
+// Demonstrate library operation
 console.log('📚 Library Management System Demo\n');
 
 try {
-  // Add books to catalog
+  // Add books to catalogs
   console.log('Adding books to catalog...');
   const classicBooks = [
     {
@@ -34,18 +34,18 @@ try {
   classicBooks.forEach(book => libraryCatalog.addBookToCatalog(book));
   displayLibraryStatus('Initial Library Catalog');
 
-  // Demonstrate book checkout
+  // Demonstrate book checkouts
   const bookToCheckout = 'ISBN-001';
   console.log(`\nChecking out book (${bookToCheckout})...`);
   libraryCatalog.checkOutBook(bookToCheckout);
   displayLibraryStatus('After Book Checkout');
 
-  // Demonstrate book return
+  // Demonstrate  return book 
   console.log(`\nReturning book (${bookToCheckout})...`);
   libraryCatalog.returnBook(bookToCheckout);
   displayLibraryStatus('After Book Return');
 
-  // Demonstrate error handling
+  //  error handling
   console.log('\nAttempting to add duplicate book...');
   libraryCatalog.addBookToCatalog(classicBooks[0]);
 } catch (error) {
