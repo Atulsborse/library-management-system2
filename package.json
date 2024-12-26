@@ -1,0 +1,16 @@
+{
+  "name": "library-management-system",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "vitest": "^0.34.6",
+    "@vitest/coverage-v8": "^0.34.6"
+  }
+}
