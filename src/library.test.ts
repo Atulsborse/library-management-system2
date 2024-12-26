@@ -72,7 +72,7 @@ describe('Library', () => {
       expect(() => library.borrowBook(book.isbn)).toThrow(BookNotAvailableError);
     });
   });
-
+//Add tests for returning books to the library catalog
   describe('returnBook', () => {
     it('should allow returning a borrowed book', () => {
       const book = {
