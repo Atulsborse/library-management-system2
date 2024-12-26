@@ -1,6 +1,6 @@
 import { Book } from '../models/Book';
 import { BookNotFoundError, BookNotAvailableError, DuplicateBookError } from '../utils/errors';
-
+//Main library management logic
 export class LibraryCatalog {
   private books: Map<string, Book> = new Map();
 
